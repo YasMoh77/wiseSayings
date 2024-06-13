@@ -1,5 +1,9 @@
+
+.flex{display: flex;} .wrap{flex-wrap: wrap;}
 .App {
   text-align: center;
+  background: #e1f1d1;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -21,7 +25,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff53;
+  border: dotted;
 }
 
 .App-link {
@@ -35,4 +40,130 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*body*/
+body{
+  background: #e1f1d1 !important;
+}
+/** nav */
+.nav{
+  height: 16vh;
+  background: #087423;
+  color: white;
+  font-size: 2vw;
+  padding: 1vh 2.5vh 1vh;
+  display: flex;
+}
+.nav img{
+  width: 11vw;
+  height: 100%;
+  margin-right: 2vw;
+}
+.nav p{
+  text-transform: capitalize;
+}
+/* home */
+/**slider */
+.slider{
+  display: flex;
+  height: 70vh;
+  width: 69%;
+  margin: 0 auto 20vh;
+  background: #e7eff9;
+  overflow: hidden;
+  border-radius: 1vw;
+}
+.slider-son{
+  display: flex;
+  
+}
+.slider-son img{
+  width: 255px;
+  pointer-events: none;
+}
+.home-top-cont{
+  justify-content: space-evenly;
+}
+.h1-top{
+  color: #676565;
+}
+.child{
+  width: 30vw;
+  background: #8ae9a5;
+  border-radius: .5vw;
+  padding: 3vh 0;
+  height: 130vh;
+}
+.div-img{
+  height: 55%;
+  margin-bottom: 12vh;
+}
+.div-img img{
+  height: 100%;
+  width: 91%;
+  border-radius: 1vw;
+}
+.child article {
+  margin-bottom: 7vh;
+  font-size: 2vw;
+  padding: 1vh 1vw;
+  font-family: sans-serif;
+  font-style: italic;
+  width: 25vw;
+  background: white;
+  margin: 0 auto 4vh;
+  border-radius: 1vw;
+}
+.child div p,.one-quote p{
+  font-weight: bold;
+  font-size: 2vw;
+  color: #545353;
+}
+.sec p{
+  color: initial;
+}
+.one-quote{
+  margin: 15vh 1vw;
+  background: white;
+  padding: 5vh 0;
+  border-radius: 1vw;
+  background-image: url('./images/flower.png');
+  background-size: cover;
+}
+.one-quote button{
+  background: white;
+  border: none;
+  width: 7vw;
+  height: 7vh;
+  border-radius: 1vw;
+  font-size: 2vw;
+}
+.sec{
+  padding: 7vh 0 6vh;
+}
+.sec article{
+  margin-bottom: 5vh;
+  font-size: 2.5vw;
+  font-family: sans-serif;
+  font-style: italic;
+  padding: 0 1vw;
+}
+/** try */
+.try-cont{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.try-cont div{
+  width: 30%;
+  border: 1px solid gray;
+  margin-bottom: 4vh;
+
+}
+/* not*/
+.not{
+    height: 30vh;
+    padding: 12vh 0 0;
+    font-size: 3vw;
 }
