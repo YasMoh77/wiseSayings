@@ -4,9 +4,11 @@ export const a=2;
 
 const arr=[{'name':'omar'},{'name':'abdu'},{'name':'huda'},{'name':'yas'}];
 //const arr=[];
-const response=await fetch('https://api.quotable.io/random');
+const response=await fetch('https://dummyjson.com/quotes/random');//https://api.quotable.io/random
 const quote=await response.json();
-//console.log(typeof(quote))
+console.log(typeof(quote))
+console.log(quote)
+
 
 
 const Try = (props) => {

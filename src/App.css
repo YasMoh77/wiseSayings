@@ -1,69 +1,10 @@
 
-.flex{display: flex;} .wrap{flex-wrap: wrap;}
-.center{margin:auto; width: fit-content}
-.w-mid{width: 60%;}
-.App {
-  text-align: center; 
-  background: #e1f1d1;
-  min-height: 100vh;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #ffffff53;
-  border: dotted;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/*body*/
-body{
-  background: #e1f1d1 !important;
-}
 /** nav */
 .nav{
-  height: 16vh;
-  background: #087423;
-  color: white;
-  font-size: 2vw;
-  padding: 1vh 2.5vh 1vh;
-  display: flex;
+  height: 20vh;
 }
 .nav img{
   width: 11vw;
-  height: 100%;
-  margin-right: 2vw;
-}
-.nav p{
-  text-transform: capitalize;
 }
 /* home */
 /**slider */
@@ -73,25 +14,44 @@ body{
   margin: 0 auto 20vh;
 }
 .slider{
-  display: flex;
   height: 70vh;
-  width: 545px;
   width: 84%;
-  background: #e7eff9;
+  background: #d5e2f2;
   overflow: hidden;
-  border-radius: 1vw;
-}
-.slider-son{
-  display: flex;
-  background: #b9c3fb;
-  
 }
 .slider-son img{
-  width: 522px;
-  pointer-events: none;
-  border-radius: 4vw;
-  padding: 4vh 1vw;
+  width: 16vw;
 }
+/** enlarge images */
+/** click img to enlarge*/
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.overlay img {
+	max-width: 100%;
+	max-height: 90%;
+}
+.close-btn {
+	position: absolute;
+	top: 2vh;
+	right: 2vw;
+	font-size: 30px;
+	color: #e11313;
+	cursor: pointer;
+}
+.no-scroll{
+	overflow: hidden;
+}
+/**end enlarge images */
 .sliderBtn{
   font-size: 4vw;
   font-weight: bold;
@@ -103,74 +63,19 @@ body{
   color: green;
 }
 .nextBtn{left: 3vw;}
-.home-top-cont{
-  justify-content: space-evenly;
-}
-.h1-top{
-  color: #676565;
-  margin-bottom: 7vh;
-}
 .child{
-  width: 30vw;
   background: #8ae9a5;
-  border-radius: .5vw;
-  padding: 3vh 0;
-  height: 130vh;
+  height: 150vh;
 }
-.div-img{
-  height: 55%;
-  margin-bottom: 12vh;
-}
-.div-img img{
-  height: 100%;
-  width: 91%;
-  border-radius: 1vw;
-}
-.child article {
-  margin-bottom: 7vh;
-  font-size: 2vw;
-  padding: 1vh 1vw;
-  font-family: sans-serif;
-  font-style: italic;
-  width: 25vw;
-  background: white;
-  margin: 0 auto 4vh;
-  border-radius: 1vw;
-}
-.child div p,.one-quote p{
-  font-weight: bold;
-  font-size: 2vw;
-  color: #545353;
-}
-.sec p{
-  color: initial;
-}
-.one-quote{
-  margin: 15vh 1vw;
-  background: white;
-  padding: 5vh 0;
-  border-radius: 1vw;
+.one-quote{  
   background-image: url('./images/flower.png');
   background-size: cover;
 }
-.one-quote button{
-  background: white;
-  border: none;
-  width: 7vw;
-  height: 7vh;
-  border-radius: 1vw;
-  font-size: 2vw;
+.footer{
+  text-align: left !important;
+  background: #426475;
 }
-.sec{
-  padding: 7vh 0 6vh;
-}
-.sec article{
-  margin-bottom: 5vh;
-  font-size: 2.5vw;
-  font-family: sans-serif;
-  font-style: italic;
-  padding: 0 1vw;
-}
+/** */
 /** try */
 .try-cont{
   display: flex;
@@ -189,3 +94,10 @@ body{
     padding: 12vh 0 0;
     font-size: 3vw;
 }
+/** col */
+.col-3,.col-md-3,.col-sm-3{width: 23%;}
+.col-4,.col-md-4,.col-sm-4{width: 31%;}
+.col-6,.col-md-6,.col-sm-6{width: 48%;}
+/** mor e*/
+.w-fit{width: fit-content}
+.wid-custom{width: 75%;}

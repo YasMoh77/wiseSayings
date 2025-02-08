@@ -14,5 +14,6 @@ code {
 
 .google-cont{
   position: fixed;
-  bottom:-3vh
+  bottom:-4vh;
+  left: 80%;
 }
