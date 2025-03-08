@@ -17,3 +17,12 @@ code {
   bottom:-4vh;
   left: 80%;
 }
+.google-cont select{height: 7vh;}
+@media(max-width:767px)
+{.google-cont{left: 38%;}}
+@media(min-width:768px)
+{.google-cont{left: 75%;}}
+@media(min-width:992px)
+{.google-cont{left: 80%;}}
+@media(min-width:1200px)
+{.google-cont{left: 83%;}}

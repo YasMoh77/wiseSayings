@@ -1,12 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect,useRef } from "react";
+import { motion,useInView } from 'framer-motion';
 import axios from 'axios'
 import img from '../../images/wiseMan2.jpg'
 
 const Api2 = () => {
         const [quote, setQuotee] = useState(null)
         const [author, setAuthor] = useState(null)
+        const ref1 = useRef('')
+        const inViewRef1 = useInView(ref1,{once:true})
+
         const func= async  () => {
-        const res=   await axios.get('https://dummyjson.com/quotes/670');//https://api.quotable.io/quotes/nH5op9VWSA5
+        const res=   await axios.get('https://dummyjson.com/quotes/675');//https://api.quotable.io/quotes/nH5op9VWSA5
         setAuthor(res.data.author)
         setQuotee(res.data.quote)
        }
@@ -20,7 +24,7 @@ const Api2 = () => {
    }
    return(
     <>
-        <div className='h-50 mb-5'>
+        <div className='h-50 mb-3 mb-md-5'>
             <img className='w-100 rounded-3 h-100' src={img}/>
         </div>
         <div>

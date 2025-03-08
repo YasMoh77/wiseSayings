@@ -2,8 +2,6 @@ import {useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Includes Popper.js
 import 'bootstrap-icons/font/bootstrap-icons.css';   
-import './App.css';
-
 //components
 import Try, {a} from './components/try'
 import Nav from './components/nav'
@@ -13,6 +11,8 @@ import Offline from './components/custom/offline';
 //
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { createContext } from 'react';
+import './App.css';
+
 
 
 

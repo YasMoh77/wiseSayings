@@ -41,7 +41,7 @@ const OneQuote = () => {
      return(<p className='spinner-border mt-3'></p>);
   }
   return(
-   <div ref={refQuoteOne}  className="one-quote rounded-2 h-100 py-4 my-5">
+   <div ref={refQuoteOne}  className="one-quote col-12 cold-md-4 rounded-2 py-4 mb-5">
       <section className="sec">
          <article className='fs-2 mb-3'>{quote}</article>
          <p className='fs-5 mb-2'>{author}</p>

@@ -18,7 +18,7 @@ const Api3 = () => {
    }
    return(
     <>
-        <div className='h-50 mb-5'>
+        <div className='h-50 mb-3 mb-md-5'>
             <img className='w-100 rounded-3 h-100' src={img}/>
         </div>
         <div>

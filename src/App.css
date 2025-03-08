@@ -8,19 +8,20 @@
 }
 /* home */
 /**slider */
-.slider-cont{
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto 20vh;
-}
 .slider{
   height: 70vh;
-  width: 84%;
   background: #d5e2f2;
   overflow: hidden;
 }
-.slider-son img{
-  width: 16vw;
+
+@media(max-width:767px)
+{  
+  .nav{height: initial;}
+  .slider-cont{width: 100%;}
+}
+@media(min-width:768px)
+{  
+  .slider-cont{width:50%;margin-bottom: 15vh;}
 }
 /** enlarge images */
 /** click img to enlarge*/
@@ -53,28 +54,42 @@
 }
 /**end enlarge images */
 .sliderBtn{
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
-  width: 5%;
+  width: 7%;
   position: relative;
-  right: 3vw;
-  background: #e2ec82;
+  background: #d5d8bc;
   border: none;
   color: green;
 }
-.nextBtn{left: 3vw;}
+
+@media(max-width:768px)
+{
+  .sliderBtn{display: none;}
+}
 .child{
   background: #8ae9a5;
-  height: 150vh;
 }
+.col-lg-4{width: 32%;}
 .one-quote{  
   background-image: url('./images/flower.png');
-  background-size: cover;
+  height: 140vh;
 }
 .footer{
   text-align: left !important;
   background: #426475;
 }
+@media(max-width:767px)
+{
+  .col-lg-4{width: 100%;}
+  .child{height: fit-content;}
+}
+@media(min-width:768px)
+{.child{height: 160vh;}}
+@media(min-width:992px)
+{.child{height: 180vh;}}
+@media(min-width:1200px)
+{.child{height: fit-content;}}
 /** */
 /** try */
 .try-cont{
@@ -94,10 +109,6 @@
     padding: 12vh 0 0;
     font-size: 3vw;
 }
-/** col */
-.col-3,.col-md-3,.col-sm-3{width: 23%;}
-.col-4,.col-md-4,.col-sm-4{width: 31%;}
-.col-6,.col-md-6,.col-sm-6{width: 48%;}
 /** mor e*/
 .w-fit{width: fit-content}
-.wid-custom{width: 75%;}
+
