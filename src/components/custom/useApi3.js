@@ -22,7 +22,7 @@ const Api3 = () => {
             <img className='w-100 rounded-3 h-100' src={img}/>
         </div>
         <div>
-            <p className='text-secondary fs-4 fw-bold'>{author}</p>
+            <p className='text-secondary  fs-4 fw-bold'>{author}</p>
             <article className='p-3 bg-white rounded-2 fst-italic fs-4 '>{quote}</article>
              {/*<i>[Tags: {state.tags.join(',')}]</i>*/}
         </div>       

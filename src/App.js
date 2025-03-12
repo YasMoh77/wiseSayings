@@ -3,20 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Includes Popper.js
 import 'bootstrap-icons/font/bootstrap-icons.css';   
 //components
-import Try, {a} from './components/try'
+import Try from './components/try'
 import Nav from './components/nav'
 import Home from './components/home'
 import Not from './components/not'
 import Offline from './components/custom/offline';
+import Footer from './components/footer/footer';
 //
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import { createContext } from 'react';
 import './App.css';
-
-
-
-
-export const NameCon = createContext()
   
 
 function App() {
@@ -38,19 +33,19 @@ function App() {
 
 
   return (
-    <div className="text-center">    
+    <div className="">{/*//text-center*/}    
            {/* if offline */}
            {offline && <Offline/>}
-           <Nav/>
-           <NameCon.Provider value='' >
+           
               <BrowserRouter>
-                  <Routes>         
+                  <Nav/>
+                  <Routes> 
                       <Route path='/try' element={<Try/>}/>
                       <Route path='/' element={<Home/>}/>
                       <Route path='*' element={<Not/>}/>
                   </Routes>
+                  <Footer/>
               </BrowserRouter>
-          </NameCon.Provider>
     </div>
   );
 }

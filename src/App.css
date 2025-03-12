@@ -3,11 +3,13 @@
 .nav{
   height: 20vh;
 }
-.nav img{
-  width: 11vw;
-}
+
 /* home */
 /**slider */
+.slider-cont{
+  margin-bottom: 20vh;
+  width: 75%;
+}
 .slider{
   height: 70vh;
   background: #d5e2f2;
@@ -19,10 +21,7 @@
   .nav{height: initial;}
   .slider-cont{width: 100%;}
 }
-@media(min-width:768px)
-{  
-  .slider-cont{width:50%;margin-bottom: 15vh;}
-}
+
 /** enlarge images */
 /** click img to enlarge*/
 .overlay {
@@ -55,20 +54,13 @@
 /**end enlarge images */
 .sliderBtn{
   font-size: 3vw;
-  font-weight: bold;
   width: 7%;
-  position: relative;
-  background: #d5d8bc;
-  border: none;
-  color: green;
+  
 }
 
-@media(max-width:768px)
-{
-  .sliderBtn{display: none;}
-}
 .child{
   background: #8ae9a5;
+  height: fit-content;
 }
 .col-lg-4{width: 32%;}
 .one-quote{  
@@ -83,26 +75,9 @@
 {
   .col-lg-4{width: 100%;}
   .child{height: fit-content;}
+  .sliderBtn{font-size: 7vw;width: 12%;}
 }
-@media(min-width:768px)
-{.child{height: 160vh;}}
-@media(min-width:992px)
-{.child{height: 180vh;}}
-@media(min-width:1200px)
-{.child{height: fit-content;}}
-/** */
-/** try */
-.try-cont{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.try-cont div{
-  width: 30%;
-  border: 1px solid gray;
-  margin-bottom: 4vh;
 
-}
 /* not*/
 .not{
     height: 30vh;
@@ -111,4 +86,4 @@
 }
 /** mor e*/
 .w-fit{width: fit-content}
-
+.minh{min-height: 100vh;}
